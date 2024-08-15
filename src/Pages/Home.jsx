@@ -3,7 +3,7 @@ import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import Kids1 from '../assets/kids1.webp';
 import Mens1 from '../assets/mens1.png';
-import Image1 from '../assets/image1.webp';
+import Mens2 from '../assets/mens2.jpg';
 import Ads from '../assets/ads.mp4';
 
 const Home = () => {
@@ -17,14 +17,21 @@ const Home = () => {
     },
     {
       name: 'Adult Clothes',
-      description: 'Durable and trendy clothes for adults.',
+      description: 'Durable and trendy clothes for adults.Adult clothes of all sizes,suitable for any age group and style which last longer than a day once You have already placed an order.',
+      price: '$50',
+      discount: '15% off',
+      image: Mens2,
+    },
+    {
+      name: 'Adult Shoes',
+      description: 'Durable and trendy shoes for adults. Adult shoes of all sizes,suitable for any age group and style which last longer than a day once You have already placed an order.',
       price: '$50',
       discount: '15% off',
       image: Mens1,
     },
     {
-      name: 'Adult Shoes',
-      description: 'Durable and trendy shoes for adults.',
+      name: 'Kids Shoes',
+      description: 'Durable and trendy shoes for kids.Kids shoes of all sizes,suitable for any age group and style which last longer than a day once You have already placed an order.',
       price: '$50',
       discount: '15% off',
       image: Mens1,
@@ -48,7 +55,7 @@ const Home = () => {
       </div>
 
       {/* Carousel */}
-      {/* <div className='mb-6'>
+      <div className='mb-6'>
         <h2 className='text-xl mb-4'>Our Featured Products</h2>
         <Carousel showThumbs={false} infiniteLoop autoPlay>
           {products.map((product, index) => (
@@ -65,7 +72,7 @@ const Home = () => {
             </div>
           ))}
         </Carousel>
-      </div> */}
+      </div>
 
       {/* Google Map */}
       <div className='mb-6'>
